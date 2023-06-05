@@ -1,7 +1,7 @@
 package com.cerner.ishmed.tdd.intro.service;
 
-import com.cerner.ishmed.tdd.intro.entity.Patient;
-import com.cerner.ishmed.tdd.intro.repository.PatientRepository;
+import com.cerner.ishmed.tdd.intro.domain.entity.PatientEntity;
+import com.cerner.ishmed.tdd.intro.domain.repository.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ public class PatientService {
         this.patientRepository = patientRepository;
     }
 
-    public Optional<Patient> get(int id) {
+    public Optional<PatientEntity> get(int id) {
         return patientRepository.findById(id);
     }
 }

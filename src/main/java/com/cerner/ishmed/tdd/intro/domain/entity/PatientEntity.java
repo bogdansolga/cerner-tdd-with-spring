@@ -1,11 +1,11 @@
-package com.cerner.ishmed.tdd.intro.entity;
+package com.cerner.ishmed.tdd.intro.domain.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class Patient {
+public class PatientEntity {
 
     @Id
     private int id;
